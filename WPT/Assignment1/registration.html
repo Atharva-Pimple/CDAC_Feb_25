@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration-Form</title>
+    <link rel="stylesheet" href="./assets/registration.css">
+</head>
+<body>
+        <h1>Registration Form</h1>
+        <form action="#">
+            <label >FirstName: </label>
+            <input name="name" type="text" placeholder="Enter your name">
+            <span>(Maximum 30 characters)</span>
+            <br><br>
+            <label >LastName: </label>
+            <input type="text" placeholder="Enter your name">
+            <span>(Maximum 30 characters)</span>
+            <br><br>
+            <label >Date of Birth: </label>
+            <input type="date" >
+            <br><br>
+            <label >Email ID: </label>
+            <input type="text" placeholder="abc@gmail.com">
+            <br><br>
+            <label >Mobile No: </label>
+            <input type="text" placeholder="+91 6737648823">
+            <span>(Maximum 10 digits)</span>
+            <br><br>
+            <label >Gender:  </label>
+            <label >Male</label>
+            <input name="gender" type="radio">
+            <label >Female</label>
+            <input name="gender" type="radio">
+            <br><br>
+            <div class="address-group">
+                <label for="address">Address:</label>
+                <textarea id="address" placeholder="Enter your address"></textarea>
+            </div>
+            <br><br>
+            <input type="checkbox">
+            <span id="terms">Accept terms and conditions.<a href="#">terms & conditions</a></span>
+            <br>
+            <div class="buttons">
+                <button type="submit"> Submit</button>
+                <button type="reset"> Clear</button>
+            </div>
+            
+        </form>
+</body>
+</html>

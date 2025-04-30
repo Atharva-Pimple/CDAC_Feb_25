@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        b{
+            color: black;
+        }
+    </style>
+  </head>
+  <body>
+    <div
+      style="
+        height: 550px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      <div
+        style="
+          height: 350px;
+          width: 700px;
+          background-color: black;
+          text-align: center;
+        "
+      >
+        <p
+          style="color: #6495ed; font-style: italic"
+          onmouseover="highlightBold()"
+          onmouseout="removeHighlight()"
+        >
+          [on mouse hover here bold words of following paragraph will be
+          higlighted]
+        </p>
+        <br /><br />
+        <p style="color: white; font-size: 20px">
+          <b>We</b> have just started <b>this</b> section for the users(<b>
+            beginner</b> 
+          to intermidiate ) who <b>want</b> to work with
+          <b>various</b> javascript <b>problems</b> and write scripts online to
+          <b>test</b> their Javascript <b>skill</b>.
+        </p>
+      </div>
+    </div>
+
+    <script>
+        function highlightBold() {
+          let boldWords = document.querySelectorAll('b');
+          boldWords.forEach(b => {
+            b.style.color="green";
+          });
+        }
+    
+        function removeHighlight() {
+          let boldWords = document.querySelectorAll('b');
+          boldWords.forEach(b => {
+            b.style.color="black";
+          });
+        }
+      </script>
+  </body>
+</html>

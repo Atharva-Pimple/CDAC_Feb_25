@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+
+    <form onsubmit="displayValues(event)">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" required /><br /><br />
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" required /><br /><br />
+
+        <label for="contact">Contact No.:</label>
+        <input type="text" id="contact" name="contact" required /><br /><br />
+
+        <label for="email">Email ID:</label>
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <p><strong>Output :</strong></p>
+    <div id="output" style="background-color: gray;"></div>
+
+    <script>
+        function displayValues(e) {
+            e.preventDefault();
+
+            var fname = document.getElementById("fname").value;
+            var lname = document.getElementById("lname").value;
+            var fname = document.getElementById("contact").value;
+            var fname = document.getElementById("email").value;
+
+            const output = document.getElementById("output");
+
+            output.innerHTML = `
+                <p><strong>First Name:</strong> ${fname}</p>
+                <p><strong>Last Name:</strong> ${lname}</p>
+                <p><strong>Contact No.:</strong> ${contact}</p>
+                <p><strong>Email ID:</strong> ${email}</p>
+            `;
+        }
+    </script>
+</body>
+
+</html>
